@@ -20,9 +20,13 @@ jobs:
       - name: Execute R script
         run: |
           Rscript R/regression_plot.R
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git add figures/regression_plot.png
+      - name: Add files
+        run: |
+          git config --global user.email "nikos.korfiatis@gmail.com"
+          git config --global user.name "nkorf"
+          git add --all figures/
+      - name: Commit files
+        run: |
           git commit -m "Add regression plot figure"
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
