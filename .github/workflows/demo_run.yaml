@@ -3,8 +3,6 @@ name: Run R script every five minutes
 on:
   push:
     branches: [ main ]
-  schedule:
-    - cron: "*/5 * * * *"
 
 jobs:
   build:
@@ -21,7 +19,7 @@ jobs:
           Rscript -e 'install.packages(c("ggplot2"))'
       - name: Execute R script
         run: |
-          Rscript path/to/regression_plot.R
+          Rscript R/regression_plot.R
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
           git add figures/regression_plot.png
