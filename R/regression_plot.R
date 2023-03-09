@@ -5,4 +5,4 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   labs(title = "Regression Plot of Weight and Miles per Gallon",
        x = "Weight (1000 lbs)",
        y = "Miles per Gallon")
-ggsave("regression_plot.png")
+ggsave("figures/regression_plot.png")
