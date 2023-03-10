@@ -1,4 +1,4 @@
-# Welcome to the demo repo 
+# Welcome to the Demo Repo 
 
 * We are going to perform two exercises here 
 
