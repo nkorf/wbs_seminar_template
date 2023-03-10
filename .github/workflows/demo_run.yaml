@@ -1,4 +1,4 @@
-name: Run R script every five minutes
+name: Update Repo with result
 
 on:
   push:
