@@ -1,8 +1,8 @@
 name: Update Repo with result
 
 on:
-  schedule:
-    - cron: '0 */3 * * *' # Run every 3 hours
+#  schedule:
+#    - cron: '0 */3 * * *' # Run every 3 hours
   push:
     branches: [ main ]
     
